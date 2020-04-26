@@ -25,7 +25,7 @@ public class CheckDZ {
 
         for (String s : fileName) {
             String name = String.valueOf(s);
-            Class ch = URLClassLoader.newInstance(new URL[]{new File("/home/snip/111/").toURL()}).loadClass("Main");
+            Class ch = URLClassLoader.newInstance(new URL[]{new File("/home/snip/111/").toURL()}).loadClass(name);
             Constructor constructor = ch.getConstructor();
             Object main = constructor.newInstance();
 
